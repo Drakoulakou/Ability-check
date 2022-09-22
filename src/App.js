@@ -62,7 +62,7 @@ if(selectedLaptop['3DMark_Time_Spy_score'] > 5000 && selectedLaptop['3DMark_Time
       <div className='marks'>
         <Mark
           className="markpc"
-          image={process.env.PUBLIC_URL + ' /PCMark10-logo.png'}
+          image={process.env.PUBLIC_URL + '/PCMark10-logo.png'}
           subtitle="Το προιόν αυτό είναι κατάλληλο γιά:"
           marks={[
             { title: 'Basic' },
@@ -74,7 +74,7 @@ if(selectedLaptop['3DMark_Time_Spy_score'] > 5000 && selectedLaptop['3DMark_Time
         />
         <Mark
           className="mark3d"
-          image={process.env.PUBLIC_URL + ' /3DMark-logo.png'}
+          image={process.env.PUBLIC_URL + '/3DMark-logo.png'}
           subtitle="TimeSpy: "
           subtitleNumber={selectedLaptop['3DMark_Time_Spy_score']}
           selected={threeDCategoryToNumber}
