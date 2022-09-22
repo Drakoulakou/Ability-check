@@ -1,0 +1,41 @@
+$color: #BE0F34;
+
+.hexagon {
+    .hex {
+        height: 188px;
+        width: 188px;
+        left: 0px;
+        top: 0px;
+        margin: 26px;
+        background: $color;
+        -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+        clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .legend{
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: -20px;
+    }
+    .number{
+        color: #fff;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 46px;
+        height: 0px;
+        margin-bottom: 71px;
+        margin-top: 8px;
+    }
+    .fps{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    .number span{
+        font-weight: 400;
+    }
+}

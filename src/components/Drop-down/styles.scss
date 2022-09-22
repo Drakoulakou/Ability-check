@@ -1,0 +1,16 @@
+.dropdown-wrapper {
+    select {
+        margin-bottom: 10px;
+        font-size: 16px;
+        padding: 5px 10px;
+        border: 1px solid #CCC;
+        height: 34px;
+        text-align: center;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        option:checked { background: grey; }
+      }
+      
+}
