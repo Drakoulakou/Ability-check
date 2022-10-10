@@ -15,12 +15,14 @@ $color: #BE0F34;
         justify-content: center;
         align-items: center;
     }
-    .legend{
+
+    .legend {
         font-size: 16px;
         font-weight: 500;
         margin-top: -20px;
     }
-    .number{
+
+    .number {
         color: #fff;
         font-size: 48px;
         font-weight: 700;
@@ -29,13 +31,25 @@ $color: #BE0F34;
         margin-bottom: 71px;
         margin-top: 8px;
     }
-    .fps{
+
+    .small-number {
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 90px;
+    }
+
+    .fps {
         color: #fff;
         font-size: 18px;
         font-weight: 500;
         line-height: 24px;
     }
-    .number span{
+
+    .fps-display-none {
+        display: none;
+    }
+
+    .number span {
         font-weight: 400;
     }
 }
