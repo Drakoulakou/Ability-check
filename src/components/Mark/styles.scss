@@ -4,13 +4,34 @@
     margin: 0 auto;
     margin-bottom: 50px;
 
-    &.markpc .bar.active { background: #93051A;  color: #fff; }
-    &.mark3d .bar.active { background: #ef8200; color: #fff; }
+    &.markpc .bar.active {
+        background: #93051A;
+        color: #fff;
+    }
 
-    &.markpc{
+    &.mark3d .bar.active {
+        background: #ef8200;
+        color: #fff;
+    }
+
+
+    &.markpc {
         padding: 20px;
     }
-    
+
+    &.markpc .bar .triangle {
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 20px solid #93051A;
+        margin: 0 50px -20px;
+    }
+    &.mark3d .bar .triangle {
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 20px solid #ef8200;
+        margin: 0 50px -20px;
+    }
+
     .graph {
         display: flex;
         flex-flow: row;
@@ -31,26 +52,31 @@
             height: 40px;
             margin: 0px 4px;
         }
+
         &:nth-child(2) {
             height: 80px;
             margin: 0px 4px;
         }
+
         &:nth-child(3) {
             height: 121px;
             margin: 0px 4px;
         }
+
         &:nth-child(4) {
             height: 160px;
             margin: 0px 4px;
         }
     }
-    .title{
+
+    .title {
         font-size: 14px;
         line-height: 16px;
         font-weight: 500;
         padding: 5px 10px;
     }
-    .subtitle{
+
+    .subtitle {
         font-size: 10px;
         line-height: 10px;
         font-weight: 400;

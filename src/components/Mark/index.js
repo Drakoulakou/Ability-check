@@ -14,6 +14,7 @@ function Mark({ className, image, subtitle, subtitleNumber, selected, marks }) {
                             <div>{mark.title}</div>
                             {mark.subtitle && <div className='subtitle'>{mark.subtitle}</div>}
                         </div>
+                        <div className={selected === i ? 'triangle' : ''}></div>
                     </div>
                 ))}
             </div>
