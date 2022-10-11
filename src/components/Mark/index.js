@@ -1,6 +1,7 @@
 import './styles.scss'
 
 function Mark({ className, image, subtitle, subtitleNumber, selected, marks }) {
+    
     return (
         <div className={`mark-wrapper ${className}`}>
             <img src={image} />       

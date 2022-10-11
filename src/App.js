@@ -13,25 +13,25 @@ function App() {
   const gamesArrayOfSelectedLaptop = Object.entries(selectedLaptop.Games).map(game => ({ sku: game[0], ...game[1] })) // games array 
   const [selecteGame, setSelectedGame] = useState(gamesArrayOfSelectedLaptop[0]) //state games
 
-let pcMarkCategoryToNumber = 0; //condition for pc Mark Category 
+  let pcMarkCategoryToNumber = 0; //condition for pc Mark Category 
 
-if(selectedLaptop.PCMark_Category === 'Home') {
-  pcMarkCategoryToNumber = 1;
-} else if (selectedLaptop.PCMark_Category === 'Produce') {
-  pcMarkCategoryToNumber = 2;
-} else if (selectedLaptop.PCMark_Category === 'Create') {
-  pcMarkCategoryToNumber = 3;
-}
+  if (selectedLaptop.PCMark_Category === 'Home') {
+    pcMarkCategoryToNumber = 1;
+  } else if (selectedLaptop.PCMark_Category === 'Produce') {
+    pcMarkCategoryToNumber = 2;
+  } else if (selectedLaptop.PCMark_Category === 'Create') {
+    pcMarkCategoryToNumber = 3;
+  }
 
-let threeDCategoryToNumber = 0; //condition for three D Mark Category 
+  let threeDCategoryToNumber = 0; //condition for three D Mark Category 
 
-if(selectedLaptop['3DMark_Time_Spy_score'] > 5000 && selectedLaptop['3DMark_Time_Spy_score'] < 6900) {
-  threeDCategoryToNumber = 1;
-} else if (selectedLaptop['3DMark_Time_Spy_score'] > 6900 && selectedLaptop['3DMark_Time_Spy_score'] < 8850) {
-  threeDCategoryToNumber = 2;
-} else if (selectedLaptop['3DMark_Time_Spy_score']  > 8850) {
-  threeDCategoryToNumber = 3;
-}
+  if (selectedLaptop['3DMark_Time_Spy_score'] > 5000 && selectedLaptop['3DMark_Time_Spy_score'] < 6900) {
+    threeDCategoryToNumber = 1;
+  } else if (selectedLaptop['3DMark_Time_Spy_score'] > 6900 && selectedLaptop['3DMark_Time_Spy_score'] < 8850) {
+    threeDCategoryToNumber = 2;
+  } else if (selectedLaptop['3DMark_Time_Spy_score'] > 8850) {
+    threeDCategoryToNumber = 3;
+  }
 
   return (
     <div className="App">
@@ -46,7 +46,7 @@ if(selectedLaptop['3DMark_Time_Spy_score'] > 5000 && selectedLaptop['3DMark_Time
 
       {selecteGame && (
         <div className='hexagons'>
-          <Hexagon number={selecteGame.normal} legend="NORMAL 1080p"  />
+          <Hexagon number={selecteGame.normal} legend="NORMAL 1080p" />
           <Hexagon number={selecteGame.ultra} legend="ULTRA 1440p" fpsContent={selecteGame.ultra === "Not enough VRAM"} />
         </div>
       )}
