@@ -6,6 +6,7 @@ import SmallHexagon from './components/SmallHexagon';
 import Mark from './components/Mark';
 import Laptops from './utils/data.json';
 import './App.scss';
+import CycleFrame from './components/Cycle-frame';
 
 function App() {
   const [selectedLaptop, setSelectedLaptop] = useState(Laptops[0]) //state laptops 
@@ -35,6 +36,7 @@ function App() {
   return (
     <div className="App">
       <Frame />
+      <CycleFrame />
       <h2><b>Δες τις επιδόσεις του laptop</b></h2>
       <h3>Διάλεξε το παιχνίδι που σε ενδιαφέρει και ανακάλυψε τις<br />επιδόσεις του</h3>
 

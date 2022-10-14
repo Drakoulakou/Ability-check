@@ -1,13 +1,7 @@
 .frame {
+    position: absolute;
     width: 100vw;
     background-color: #be0f34;
     height: 45px;
-    padding-bottom: 10px;
-    margin-bottom: 60px;
-
-    .cicle-logo {
-        clip-path: circle(26px);
-        background-color: #be0f34;
-        padding: 35px;  
-    }
+    top: 0;
 }

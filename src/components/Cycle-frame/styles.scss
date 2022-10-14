@@ -1,0 +1,18 @@
+.cycle-frame {
+    position: relative;
+    width: 52px;
+    height: 52px;
+    background: #be0f34;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 6px solid white;
+    margin-top: 14px;
+    
+
+    .logo-u{
+        margin-top: 9px;
+    }
+    .logo-l{
+        margin-bottom: -8px;
+    }
+}

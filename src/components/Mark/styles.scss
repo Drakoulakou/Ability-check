@@ -16,21 +16,33 @@
 
 
     &.markpc {
-        padding: 20px;
+        padding-top: 20px;
     }
 
     &.markpc .bar .triangle {
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
         border-top: 20px solid #93051A;
-        margin: 0 50px -20px;
+        margin: 0px 39% -16%;
+    }
+
+    @media screen and (max-width: 600px) {
+        &.markpc .bar .triangle {
+            margin: 0px 32% -26%;
+        }
     }
 
     &.mark3d .bar .triangle {
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
         border-top: 20px solid #ef8200;
-        margin: 0 50px -20px;
+        margin: 0px 39% -16%;
+    }
+
+    @media screen and (max-width: 600px) {
+        &.mark3d .bar .triangle {
+            margin: 0px 32% -26%;
+        }
     }
 
     .graph {
