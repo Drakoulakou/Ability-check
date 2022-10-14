@@ -4,8 +4,7 @@ import Frame from './components/Frame';
 import Hexagon from './components/Hexagon';
 import SmallHexagon from './components/SmallHexagon';
 import Mark from './components/Mark';
-import Laptops from './utils/data.json'
-
+import Laptops from './utils/data.json';
 import './App.scss';
 
 function App() {

@@ -1,10 +1,14 @@
 import './styles.scss'
+import descriptions from '../../utils/descriptions'
+
 
 function Mark({ className, image, subtitle, subtitleNumber, selected, marks }) {
-    
+
+    const markTitle = marks[selected].title;
+
     return (
         <div className={`mark-wrapper ${className}`}>
-            <img src={image} />       
+            <img src={image} />
             <div className='mark'></div>
             <div>{subtitle} {subtitleNumber}</div>
             <div className='graph'>
@@ -14,10 +18,11 @@ function Mark({ className, image, subtitle, subtitleNumber, selected, marks }) {
                             <div>{mark.title}</div>
                             {mark.subtitle && <div className='subtitle'>{mark.subtitle}</div>}
                         </div>
-                        <div className={selected === i ? 'triangle' : ''}></div>
+                        {selected === i && <div className='triangle'></div>} {/*renders only for active bar*/}
                     </div>
                 ))}
             </div>
+            <div className='description'>{descriptions[markTitle]}</div>
         </div>
     )
 }

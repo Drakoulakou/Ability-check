@@ -25,6 +25,7 @@
         border-top: 20px solid #93051A;
         margin: 0 50px -20px;
     }
+
     &.mark3d .bar .triangle {
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
@@ -38,6 +39,12 @@
         justify-content: space-between;
         align-items: end;
         height: 200px;
+    }
+
+    .description {
+        margin-top: 45px;
+        text-align: left;
+        color: #737373;
     }
 
     .bar {
